@@ -1,9 +1,9 @@
-# DEEP as a Service container for Conus (Marine Snails) classification
+# DEEP as a Service container for seeds classification
 
 ![DEEP-Hybrid-DataCloud logo](https://deep-hybrid-datacloud.eu/wp-content/uploads/2018/01/logo.png)
 
 This is a container that will run the DEEP as a Service API component,
-with an application to classify conus images. This module runs in Lasagne on top of Theano and uses a convolutional neural network (ResNet50) as model.
+with an application to classify seeds images. This module runs in Lasagne on top of Theano and uses a convolutional neural network (ResNet50) as model.
 
 # Running the container
 
@@ -13,7 +13,7 @@ To run the Docker container directly from Docker Hub and start using the API
 simply run the following command:
 
 ```bash
-$ docker run -ti -p 5000:5000 deephdc/deep-oc-conus-classification
+$ docker run -ti -p 5000:5000 deephdc/deep-oc-seeds-classification
 ```
 
 This command will pull the Docker container grom the Docker Hub
@@ -26,23 +26,23 @@ to modify the `Dockerfile` for instance) follow the following instructions:
 
 Building the container:
 
-1. Get the `DEEP-OC-conus-classification` repository (this repo):
+1. Get the `DEEP-OC-seeds-classification` repository (this repo):
 
     ```bash
-    $ git clone https://github.com/indigo-dc/DEEP-OC-conus-classification
+    $ git clone https://github.com/indigo-dc/DEEP-OC-seeds-classification
     ```
 
 2. Build the container:
 
     ```bash
-    $ cd DEEP-OC-conus-classification
-    $ docker build -t deephdc/deep-oc-conus-classification .
+    $ cd DEEP-OC-seeds-classification
+    $ docker build -t deephdc/deep-oc-seeds-classification .
     ```
 
 3. Run the container:
 
     ```bash
-    $ docker run -ti -p 5000:5000 deephdc/deep-oc-conus-classification
+    $ docker run -ti -p 5000:5000 deephdc/deep-oc-seeds-classification
     ```
 
 These three steps will download the repository from GitHub and will build the
