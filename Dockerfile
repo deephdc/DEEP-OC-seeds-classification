@@ -61,4 +61,5 @@ RUN curl -o ./seeds-classification-theano/data/data_splits/synsets.txt  ${SWIFT_
 EXPOSE 5000
 
 RUN apt-get install nano
-CMD deepaas-run
+
+CMD deepaas-run --listen-ip 0.0.0.0
