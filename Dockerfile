@@ -37,10 +37,8 @@ RUN git clone https://github.com/indigo-dc/seeds-classification-theano -b packag
     cd ..
 
 
-RUN git clone https://github.com/indigo-dc/deepaas && \
-    cd deepaas && \
-    pip install -U . && \
-    cd ..
+#Install deepaas
+RUN pip install deepaas
 
 
 ENV SWIFT_CONTAINER_seeds https://cephrgw01.ifca.es:8080/swift/v1/seeds/
