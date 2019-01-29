@@ -1,6 +1,6 @@
 # DEEP as a Service container for seeds classification
 
-![DEEP-Hybrid-DataCloud logo](https://deep-hybrid-datacloud.eu/wp-content/uploads/2018/01/logo.png)
+![DEEP-Hybrid-DataCloud logo](https://deep-hybrid-datacloud.eu/wp-content/uploads/sites/2/2018/01/logo.png)
 
 This is a container that will run the DEEP as a Service API component,
 with an application to classify seeds images. This module runs in Lasagne on top of Theano and uses a convolutional neural network (ResNet50) as model.
